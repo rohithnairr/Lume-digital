@@ -29,7 +29,7 @@ function Footer() {
                     <a href="#" className="mr-4 hover:underline md:mr-6 ">Licensing</a>
                 </li>
                 <li>
-                    <a href="mailto:info@lume-digital.co.uk" className="hover:underline">Contact</a>
+                    <a href="mailto:austin@lume-digital.co.uk" className="hover:underline">Contact</a>
                 </li>
             </ul>
         </div>

@@ -55,7 +55,7 @@ function Navbar() {
                   
                 </div>
                 <div>
-                <a className="text-l inline-flex  font-Jakarta font-semibold text-black px-8 py-4 lg:mt-0 mt-8 bg-white rounded-3xl" href="mailto:info@lume-digital.co.uk">Contact &nbsp;	&#128640;</a>
+                <a className="text-l inline-flex  font-Jakarta font-semibold text-black px-8 py-4 lg:mt-0 mt-8 bg-white rounded-3xl" href="mailto:austin@lume-digital.co.uk">Contact &nbsp;	&#128640;</a>
 
                 </div>
             </div>
