@@ -20,16 +20,17 @@ import Footer from './components/footer'
 export default function Home() {
   return (
     <div>
-      <Navbar />
+        <Navbar />
 
       {/* First section- Intro */}
 
       <div className="container mx-auto p-4 lg:p-12 animate-fade-up">
+   
         <div className="grid lg:grid-cols-2 gap-4 mt-16 sm:grid-cols-1 md:grid-cols-2  text-grey-900">
           <div className="mt-0 lg:mt-10 md:mt-20" data-aos="fade-right">
             <h1 className="font-bold text-white text-4xl lg:text-5xl font-Jakarta pb-4 animate-flip-up  ">Unleashing untapped potential</h1>
             <p className="pt-5 pb-14 text-gray-100 max-w-sm font-thin font-Jakarta text-l">Drive success by unlocking your brand full potential with data-driven strategies and creative campaigns</p>
-            <a className="text-l mt-8 font-Jakarta font-bold text-black px-8 py-4 bg-white rounded-3xl" href="mailto:austin@lume-digital.co.uk">Boost your Business ;</a>
+            <a className="text-l mt-8 font-Jakarta font-bold text-black px-8 py-4 bg-white rounded-3xl" href="mailto:austin@lume-digital.co.uk">Boost your Business  &nbsp;	&#128640;</a>
           </div>
           <div className="mt-32 lg:mt-0">
             <Image
