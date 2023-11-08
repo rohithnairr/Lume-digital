@@ -9,7 +9,7 @@ function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="flex items-center w-full max-w-screen-xl   mx-auto justify-between flex-wrap p-6 lg:px-8">
+        <nav className="flex items-center w-full  mx-auto justify-between flex-wrap p-6 lg:px-8">
             <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
                 <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                     <svg width="100" height="91" viewBox="0 0 155 91" fill="none" xmlns="http://www.w3.org/2000/svg">

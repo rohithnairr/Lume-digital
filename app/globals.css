@@ -19,11 +19,14 @@
 }
 
 html{
-  background-color: rgb(26, 26, 26) !important;
+  background-color: rgb(0, 0, 0) !important;
   color: #ffffff;
+  
 }
 body {
   background-color: rgb(0, 0, 0) !important;
   color:#ffffff;
+  max-width: 1400px;
+  margin: auto;
 }
 

@@ -10,7 +10,7 @@ function Footer() {
     return (
         
 <footer className="bg-black m-4 mt-32">
-    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+    <div className="w-full  mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
         <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                     <svg width="150" height="91" viewBox="0 0 155 91" fill="none" xmlns="http://www.w3.org/2000/svg">
