@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400;600&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,12 +18,12 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html{
+  background-color: rgb(26, 26, 26) !important;
+  color: #ffffff;
 }
+body {
+  background-color: rgb(0, 0, 0) !important;
+  color:#ffffff;
+}
+

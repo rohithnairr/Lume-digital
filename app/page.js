@@ -1,113 +1,259 @@
 import Image from 'next/image'
+import Navbar from './components/navbar'
+import image1 from './images/image1.png'
+import lume from './images/lume.png'
+import dev from './images/development.png'
+import design from './images/design.png'
+import motion from './images/motion.png'
+import graphic from './images/graphic.png'
+import video from './images/video.png'
+import photo from './images/photo.png'
+import about from './images/image2.png'
+import Mindbridge from './images/mindbridge.png'
+import ui from './images/ui.png'
+import web from './images/webdevelopment.png'
+import wedding from './images/wedding.png'
+import product from './images/product.png'
+import cover from './images/cover.png'
+import Footer from './components/footer'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <div>
+      <Navbar />
+
+      {/* First section- Intro */}
+
+      <div className="container mx-auto p-4 lg:p-12 animate-fade-up">
+        <div className="grid lg:grid-cols-2 gap-4 mt-16 sm:grid-cols-1 md:grid-cols-2  text-grey-900">
+          <div className="mt-0 lg:mt-10 md:mt-20" data-aos="fade-right">
+            <h1 className="font-bold text-white text-4xl lg:text-5xl font-Jakarta pb-4 animate-flip-up  ">Unleashing untapped potential</h1>
+            <p className="pt-5 pb-14 text-gray-100 max-w-sm font-thin font-Jakarta text-l">Drive success by unlocking your brand full potential with data-driven strategies and creative campaigns</p>
+            <a className="text-l mt-8 font-Jakarta font-bold text-black px-8 py-4 bg-white rounded-3xl" href="mailto:rohithnairreghu@gmail.com">Boost your Business ;</a>
+          </div>
+          <div className="mt-32 lg:mt-0">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              className="max-w-sm max-h-l mx-auto w-fit  md:w-fit lg:w-screen animate-infinite animate-wiggle"
+              src={image1}
+              alt="image"
             />
-          </a>
+          </div>
+     
+        </div>
+
+        <div className="grid bg-slate-300  p-16 lg:grid-cols-2 gap-4 mt-16 sm:grid-cols-1 md:grid-cols-2 rounded-lg lg:mt-32 animate-fade-up">
+          <div className="mt-0 lg:mt-10 md:mt-20" data-aos="fade-right">
+            <h1 className="font-bold text-gray-900 text-2xl lg:text-5xl font-Jakarta pb-4 animate-flip-up  ">Why LUME Digital ?</h1>
+            <p className="pt-5 pb-14 text-gray-900 max-w-sm font-light font-Jakarta text-sm">Experience brand and digital success as we harness your brands full potential through data-driven strategies and creative campaigns. Our expert team maximizes your brand&quot;s impact, attracting your target audience and delivering exceptional results. Discover the transformative power of our services and take your brand to new heights</p>
+
+          </div>
+          <div className="mt-8 lg:mt-0 animate-jump">
+            <Image
+              className="max-w-l h-auto mx-auto animate-jump"
+              src={lume}
+              alt="image"
+            />
+          </div>
+        </div>
+
+        {/*Our Services*/}
+
+        <div className="grid grid-cols-1 lg:mt-16 md:mt-8 sm:mt-4 animate-fade-up"id="services">
+          <h2 className="font-bold text-white text-2xl lg:text-4xl font-Jakarta mt-24 pb-4 lg:mt-32 max-w-l animate-fade-up animate-flip-up  ">
+            Our Services
+          </h2>
+          <p className="font-thin text-gray-400 text-l lg:text-l font-Jakarta mt-4 pb-4  max-w-2xl">
+            We provide a various cross of services that can make your business more brighter or making some memories of your loved ones special moments.
+          </p>
+        </div>
+        <div className="grid lg:grid-cols-3 gap-4 mt-16 sm:grid-cols-1 md:grid-cols-2  text-grey-900 mx-auto">
+          <div className="mx-auto text-center p-8">
+            <Image
+              className="max-w-l max-h-l mx-auto animate-bounce"
+              src={dev}
+              alt="image"
+            />
+            <div className="mx-auto mt-8">
+              <h3 className="text-center font-bold text-xl ">Development</h3>
+              <p className="w-base text-center mt-4 font-thin text-gray-200">We tailor top-tier platforms for your brand&quot;s unique requirements, whether it&quot;s a website or a mobile app.</p>
+            </div>
+
+          </div>
+          <div className="mx-auto text-center p-8">
+            <Image
+              className="max-w-l max-h-l mx-auto animate-bounce"
+              src={design}
+              alt="image"
+            />
+            <div className="mx-auto mt-8">
+              <h3 className="text-center font-bold text-xl">UI/UX Design</h3>
+              <p className="w-base text-center mt-4 font-thin text-gray-200">Crafting intuitive UI/UX solutions to enhance your digital experiences, ensuring your users have a seamless journey on your website or app.</p>
+            </div>
+
+          </div>
+          <div className="mx-auto text-center p-8">
+            <Image
+              className="max-w-l max-h-l mx-auto animate-bounce"
+              src={graphic}
+              alt="image"
+            />
+            <div className="mx-auto mt-8">
+              <h3 className="text-center font-bold text-xl">Graphic Design</h3>
+              <p className="w-base text-center mt-4 font-thin text-gray-200">Transform your brand&quot;s identity into captivating visual stories with our expert graphic design services, delivering stunning graphics and visuals.</p>
+            </div>
+          </div>
+
+        </div>
+        <div className="grid lg:grid-cols-3 gap-4 mt-8 sm:grid-cols-1 md:grid-cols-2  text-grey-900 mx-auto">
+          <div className="mx-auto text-center p-8">
+            <Image
+              className="max-w-l max-h-l mx-auto animate-bounce"
+              src={motion}
+              alt="image"
+            />
+            <div className="mx-auto mt-8">
+              <h3 className="text-center font-bold text-xl">Motion Graphic</h3>
+              <p className="w-base text-center mt-4 font-thin text-gray-200">Infuse dynamic motion into your brand&quot;s narrative with our skilled motion graphics services, amplifying your visual storytelling with captivating animations and effects</p>
+            </div>
+
+          </div>
+          <div className="mx-auto text-center p-8">
+            <Image
+              className="max-w-l max-h-l mx-auto animate-bounce"
+              src={photo}
+              alt="image"
+            />
+            <div className="mx-auto  mt-8">
+              <h3 className="text-center font-bold text-xl">Photography</h3>
+              <p className="w-base text-center mt-4 font-thin text-gray-200">Elevate your brand&quot;s story through the lens of our photography services, capturing moments that resonate with your or your brand&quot;s audience and enhance your visual presence.</p>
+            </div>
+
+          </div>
+          <div className="mx-auto text-center p-8">
+            <Image
+              className="max-w-l max-h-l mx-auto animate-bounce"
+              src={video}
+              alt="image"
+            />
+            <div className="mx-auto  mt-8">
+              <h3 className="text-center font-bold text-xl">Videography</h3>
+              <p className="w-base text-center mt-4 font-thin text-gray-200">Unfold your brand &quot;s story through our cinematic videography services, creating captivating videos that engage your audience and elevate your visual narrative.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* About Us */}
+        <div className="grid lg:grid-cols-2 gap-4 mt-16 lg:mt-32 sm:grid-cols-1 md:grid-cols-2  text-grey-900 animate-fade-up" id="About">
+          <div className="mt-0 lg:mt-10 md:mt-20" data-aos="fade-right">
+            <h1 className="font-bold text-white text-3xl lg:text-4xl font-Jakarta pb-4 animate-flip-up  ">About Us</h1>
+            <p className="pt-5 pb-14 text-gray-100 max-w-l font-thin font-Jakarta text-l">At <b>Lume Digital</b>, we&quot;re more than just a digital marketing agency; we&quot;re your dedicated partners in the digital realm. With a team of experienced experts, we specialize in crafting unique brand narratives and tailored strategies to enhance your brand&quot;s visibility, engagement, and profitability. We&quot;re committed to delivering measurable results by combining data-driven insights with creative brilliance. Our mission is to navigate the complexities of the digital world on your behalf, creating compelling content, optimizing your online presence, and driving growth. Welcome to <b>Lume Digital</b>, where your brand&quot;s digital journey begins with a passion for innovation and a commitment to your success</p>
+
+          </div>
+          <div className="mt-16 lg:mt-0 ">
+            <Image
+              className="max-w-sm max-h-l mx-auto p-8 lg:p-0"
+              src={about}
+              alt="image"
+            />
+          </div>
+        </div>
+
+
+
+        {/* Works Tech*/}
+
+        <div className="grid grid-cols-1 lg:mt-16 md:mt-8 sm:mt-4 animate-fade-up" id="Works">
+          <h2 className="font-bold text-white text-2xl lg:text-4xl font-Jakarta mt-24 pb-4 lg:mt-32 max-w-l animate-flip-up ">
+            Turning your ideas into a reality
+          </h2>
+          <p className="font-thin text-gray-400 text-l lg:text-l font-Jakarta mt-4 pb-4  max-w-l ">
+            Some of our Tech related works
+          </p>
+        </div>
+        <div className="grid lg:grid-cols-3 gap-4 mt-16 sm:grid-cols-1 md:grid-cols-3  text-grey-900 mx-auto animate-fade-up">
+          <div className=" text-center">
+            <Image
+              className="max-w-xl w-full"
+              src={Mindbridge}
+              alt="image"
+            />
+            <div className="mx-auto mt-8">
+              <h3 className="text-left font-bold text-xl">Mindbridge</h3>
+              <p className="w-base text-left mt-4 font-thin text-gray-200">Ux/Ui Design</p>
+            </div>
+
+          </div>
+          <div className="text-center ">
+            <Image
+              className="max-w-l  w-full"
+              src={ui}
+              alt="image"
+            />
+            <div className="mx-auto mt-8">
+              <h3 className="text-left font-bold text-xl">UI Elements</h3>
+              <p className="w-base text-left mt-4 font-thin text-gray-200">UI/UX Design</p>
+            </div>
+
+          </div>
+          <div className="text-center">
+            <Image
+              className="max-w-xl w-full "
+              src={web}
+              alt="image"
+            />
+            <div className="mx-auto mt-8">
+              <h3 className="text-left font-bold text-xl">CrowdAfrik</h3>
+              <p className="w-base text-left mt-4 font-thin text-gray-200">Web Development</p>
+            </div>
+          </div>
+
+          {/* Works - Creative*/}
+        </div>
+        <div className="grid grid-cols-1 lg:mt-16 md:mt-8 sm:mt-4 animate-fade-up">
+          <h2 className="font-bold text-white text-2xl lg:text-4xl font-Jakarta mt-24 pb-4 lg:mt-32 max-w-l animate-flip-up  ">
+            Creating beautiful memories
+          </h2>
+          <p className="font-thin text-gray-400 text-l lg:text-l font-Jakarta mt-4 pb-4  max-w-l ">
+            Some of our creative works
+          </p>
+        </div>
+        <div className="grid lg:grid-cols-3 gap-3 mt-16 sm:grid-cols-1 md:grid-cols-3  text-grey-900 mx-auto animate-fade-up">
+          <div className="text-center w-full">
+            <Image
+              className="w-full "
+              src={wedding}
+              alt="image"
+            />
+            <div className="mx-auto mt-8">
+              <h3 className="text-left font-bold text-xl">Wedding Photography</h3>
+            </div>
+          </div>
+          <div className="text-center w-full">
+            <Image
+              className="w-full"
+              src={product}
+              alt="image"
+            />
+            <div className="mx-auto mt-8">
+              <h3 className="text-left font-bold text-xl">Product Photography</h3>
+            </div>
+
+
+          </div>
+          <div className="text-center w-full">
+            <Image
+              className="w-full"
+              src={cover}
+              alt="image"
+            />
+            <div className="mx-auto mt-8">
+              <h3 className="text-left font-bold text-xl">Cover & Poster Design</h3>
+            </div>
+          </div>
         </div>
       </div>
+      <Footer />
+    </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
   )
 }
